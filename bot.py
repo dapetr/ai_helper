@@ -5,7 +5,7 @@ from gpt import *
 import logging
 
 
-#logging.basicConfig(filename='log_file.txt',
+#logging.basicConfig(filename='log_file.txt',    
  #                   level=logging.DEBUG,
   #                  format="%(asctime)s %(message)s")
 
@@ -62,7 +62,7 @@ def send_history(message):
         bot.reply_to(message, "У вас нет истории сообщений.")
 
 
-#@bot.message_handler(commands=['debug'])
+#@bot.message_handler(commands=['debug'])          не работает при проверке бота, не знаю в чём ошибка
 #def logs(message):
  #   with open("log_file.txt", "rb") as f:
   #      bot.send_document(message.chat.id, f)
